@@ -1,0 +1,163 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* --------------------------------header头部模块-------------------------------- */
+.header {
+    height: 84px;
+    padding-top: 16px;
+    border-bottom: 2px solid #b11919;
+}
+
+/* --------------------------------注册区模块-------------------------------- */
+.registerarea {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #dfdfdf;
+}
+
+/* ----------------标题------------------ */
+.reg_hd {
+    height: 42px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #ececec;
+}
+
+.reg_hd .login {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.reg_hd .login a {
+    color: #c81623;
+}
+
+/* ----------------注册内容---------------- */
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin: 20px 0;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 90px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.reg_form ul li input {
+    width: 240px;
+    height: 36px;
+    margin-right: 10px;
+    border: 1px solid #999;
+    font-size: 14px;
+}
+
+/* ---------------输入验证-------------- */
+.reg_form ul li .error {
+    color: #c81623;
+}
+
+.reg_form ul li .success {
+    color: #009c18;
+}
+
+.reg_form ul li span i {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.reg_form ul li .error i {
+    background: url(../images/error.png);
+}
+
+.reg_form ul li .success i {
+    background: url(../images/success.png);
+}
+
+/* --------------安全程度------------ */
+.safe_level {
+    padding-left: 180px;
+}
+
+.safe_level em {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.safe_level .weak {
+    background-color: #de1111;
+}
+
+.safe_level .mid {
+    background-color: #40b83f;
+}
+
+.safe_level .strg {
+    background-color: #f79100;
+}
+
+/* -------------协议---------------- */
+.agree {
+    padding: 22px 0 22px 95px;
+}
+
+.reg_form input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+/* -----------完成注册按钮------------ */
+.reg_form .btn {
+    margin-left: 120px;
+    width: 200px;
+    height: 34px;
+    border: 0;
+    color: #fff;
+    background-color: #c81623;
+    cursor: pointer;
+}
+
+/* --------------------------------footer版权模块-------------------------------- */
+.footer .mod_copyright {
+    height: 120px;
+    border-top: 1px solid #ededed;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer .mod_copyright .links {
+    margin-top: 20px;
+}
+
+.footer .mod_copyright .links a {
+    padding: 0 14px;
+    border-left: 1px solid #999;
+}
+
+.footer .mod_copyright .links a:first-child {
+    border: 0;
+}
+
+.footer .mod_copyright .copyright {
+    margin-top: 16px;
+}
