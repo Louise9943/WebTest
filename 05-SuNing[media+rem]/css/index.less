@@ -1,0 +1,163 @@
+// 首页的样式less文件
+
+// 导入 common.less 的样式表，html文件里就可以直接引入 index.css 而无需再引入 common.css
+@import "common";
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #F2F2F2;
+}
+
+// 页面元素rem计算公式: 页面元素的px / html字体大小 50
+@baseFont: 50;
+
+// ----------------------顶部搜索框-------------------------
+.search_content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: (88rem / @baseFont);
+    background-color: #ffc001;
+
+    .classify {
+        width: (44rem / @baseFont);
+        height: (70rem / @baseFont);
+        margin: (11rem / @baseFont) (25rem / @baseFont) (7rem / @baseFont);
+        background: url(../images/classify.png) no-repeat;
+        background-size: (44rem / @baseFont);
+    }
+
+    .search {
+        flex: 1;
+
+        input {
+            width: 100%;
+            height: (66rem / @baseFont);
+            margin-top: (12rem / @baseFont);
+            padding: 0 (50rem / @baseFont);
+            font-size: (25rem / @baseFont);
+            line-height: (66rem / @baseFont);
+            background-color: #fff2cc;
+            color: #757575;
+            border-radius: (33rem / @baseFont);
+            border: none;
+            outline: none;
+        }
+    }
+
+    .login {
+        width: (75rem / @baseFont);
+        height: (70rem / @baseFont);
+        margin: (10rem / @baseFont);
+        font-size: (25rem / @baseFont);
+        line-height: (70rem / @baseFont);
+        text-align: center;
+        color: #fff;
+    }
+}
+
+// ----------------------banner部分-------------------------
+.banner {
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ----------------------广告部分-------------------------
+.ad {
+    display: flex;
+
+    a {
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+
+// ----------------------nav模块-------------------------
+nav {
+    ul {
+        li {
+            float: left;
+            width: (150rem / @baseFont);
+            height: (140rem / @baseFont);
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: (82rem / @baseFont);
+                    height: (82rem / @baseFont);
+                    margin: (10rem / @baseFont);
+                }
+
+                span {
+                    font-size: (25rem / @baseFont);
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+// ----------------------底部导航栏-------------------------
+// 保留底部位置，以免滑到底部后遮挡内容
+.footer_box {
+    margin-top: (20rem / @baseFont);
+    width: (750rem / @baseFont);
+    height: (100rem / @baseFont);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: (750rem / @baseFont);
+    height: (100rem / @baseFont);
+    background-color: #fff;
+
+    ul li {
+        float: left;
+        width: 20%;
+        height: (100rem / @baseFont);
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin-top: (10rem / @baseFont);
+                width: (48rem / @baseFont);
+                height: (48rem / @baseFont);
+            }
+
+            span {
+                font-size: (25rem / @baseFont);
+                color: #666;
+            }
+        }
+
+        &:nth-child(1) a span {
+            color: #000;
+        }
+    }
+}
