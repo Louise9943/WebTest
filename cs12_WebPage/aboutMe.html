@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .box {
+            height: 500px;
+        }
+
+        .photo {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: 216px;
+            height: 216px;
+            border: 8px double #222;
+        }
+
+        .content {
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            width: 68%;
+            height: 400px;
+        }
+
+        .content ul li{
+            display: flex;
+            width: 100%;
+        }
+
+        .content ul li span{
+            flex: 1;
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        .content ul li span img{
+            width: 18px;
+        }
+
+        strong {
+            font-size: 22px;
+        }
+
+        i {
+            color: rgb(60, 60, 60);
+        }
+
+        .line {
+            margin-bottom: 10px;
+            height: 20px;
+            border-bottom: 4px dotted #222;
+        }
+
+        @media  screen and (max-width: 992px) {
+            .photo {
+                position: absolute;
+                top: 90px;
+                right: 30px;
+                width: 150px;
+                height: 150px;
+                border: 8px double #222;
+            }
+        }
+
+        @media  screen and (max-width: 768px) {
+            .photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .content ul li span{
+                font-size: 18px;
+            }
+
+            strong {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            .box {
+                height: 650px;
+            }
+
+            .photo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .content {
+                width: 90%;
+            }
+
+            .content ul li {
+                display: block;
+            }
+
+            .content ul li span{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1> >>> About Me</h1>
+        <img class="photo" src="./pictures/aboutMe_photo.jpg" alt="">
+        <div class="content">
+            <ul>
+                <li>
+                    <span><strong>Name: </strong> <i>Ruisi Liang</i></span>
+                    <span><strong>Birthday: </strong> <i>Apr. 3rd</i></span>
+                </li>
+                <li>
+                    <span><strong>Zodiac: </strong> <img src="./pictures/Aries.png" alt=""> <i>Aries</i></span>
+                    <span><strong>Blood-type: </strong> <i>B</i></span>
+                </li>
+                <li>
+                    <span><strong>Phone#: </strong> <i>929-300-2906</i></span>
+                </li>
+                <li>
+                    <span><strong>Email: </strong> <i>ruisi.liang81@qmail.cuny.edu</i></span>
+                </li>
+                <div class="line"></div>
+                <li>
+                    <span><strong>College: </strong> <i>Queens College</i></span>
+                    <span><strong>Attend Year: </strong> <i>SP2020</i></span>
+                </li>
+                <li>
+                    <span><strong>Major: </strong> <i>Computer Science</i></span>
+                    <span><strong>Level: </strong> <i>Undergraduate</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a class="back" href="index.html"> <<< Back to Home Page</a>
+</body>
+</html>

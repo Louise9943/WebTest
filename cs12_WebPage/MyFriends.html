@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        p {
+            margin: 0 20px;
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        ul {
+            margin: 50px auto;
+        }
+
+        li {
+            float: left;
+            margin: 0 0 20px 20px;
+        }
+
+        li span {
+            display: block;
+        }
+
+        img {
+            height: 240px;
+            border: 5px solid #222;
+        }
+
+        @media screen and (max-width: 864px) {
+            img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <h1> >>> My Friends</h1>
+        <p>
+            The photos below are my best friends that met in China. We always stayed together when we are in school. We ate breakfast together, ate lunch together, had class together, hanged out together and took the bus together. That was a good time.
+        </p>
+        <ul class="clearfix">
+            <li>
+                <span>
+                    <img src="./pictures/friend1.jpg" alt="">
+                </span>
+            </li>
+            <li>
+                <span>
+                    <img src="./pictures/friend2.jpg" alt="">
+                </span>
+            </li>
+            <li>
+                <span>
+                    <img src="./pictures/friend3.jpg" alt="">
+                </span>
+            </li>
+        </ul>
+    </div>
+    <a class="back" href="index.html"> <<< Back to Home Page</a>
+</body>
+</html>

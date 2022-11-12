@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="../common.css">
+    <style>
+        ul {
+            display: flex;
+            margin: 50px auto;
+            width: 70%;
+        }
+
+        li {
+            flex: 1;
+            vertical-align: middle;
+        }
+
+        li a {
+            display: block;
+        }
+
+        li a p{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        img {
+            height: 200px;
+            border: 5px solid #222;
+        }
+
+        @media screen and (max-width: 768px) {
+            ul {
+                display: block;
+            }
+
+            ul li {
+                margin-bottom: 50px;
+            }
+
+            img {
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>>>> My Hobbies</h1>
+        <ul>
+            <li>
+                <a href="Games.html">
+                    <p><img src="../pictures/Game-icons.png" alt=""></p>
+                    <p>Games</p>
+                </a>
+            </li>
+            <li>
+                <a href="Arts.html">
+                    <p><img src="../pictures/art-icons.png" alt=""></p>
+                    <p>Arts</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <a class="back" href="../index.html"> <<< Back to Home Page</a>
+</body>
+</html>
